@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-04-17",
+  "enfermedad": "Parkinson",
+  "proteina_blanco": "Alpha-sinucleína (P37840)",
+  "dominio": "NAC (residuos 61-95)",
+  "modelo_generativo": "EvoDiff OA-DM-38M",
+  "gpu": "Tesla T4",
+  "binders": [
+    {"id": 1, "secuencia": "MPADAGRILFGPAAWVAICLVGAVPGWINRCFDVEGQVLGEVEQTFDHDE", "longitud": 50},
+    {"id": 2, "secuencia": "MWRLDFRVWSLDFQAYRACASIMGQISDVAGFSDFRSDRGKLKPGVESAE", "longitud": 50},
+    {"id": 3, "secuencia": "MNAMRGQSSSKPAGLQITALDIIAAQTNLGGGTLARAPFTYRDTAIVSDL", "longitud": 50},
+    {"id": 4, "secuencia": "MQHPVAPIQSTATITKINAWYYAFECNSKDGGQFGAGPTQNDPTTGAPIP", "longitud": 50},
+    {"id": 5, "secuencia": "MTHSATSLRLQVVDQPQMAMKKISASNVTATNLNQNSDDTISQIYLTSNG", "longitud": 51}
+  ]
+}
