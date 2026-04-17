@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkinson – BioForge Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050810;
+      --surface: #0b1120;
+      --border: #1a2540;
+      --accent1: #00f5a0;
+      --accent2: #0056ff;
+      --accent3: #ff3d6e;
+      --accent4: #ffcc00;
+      --text: #e2e8f8;
+      --muted: #5a6a8a;
+      --mono: "Space Mono", monospace;
+      --sans: "Syne", sans-serif;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); min-height:100vh; }
+    .container { max-width:1100px; margin:auto; padding:24px; }
+    h1 { font-size:2.4rem; font-weight:800; background:linear-gradient(90deg,var(--accent1),#7af0ff,var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .info { margin-bottom:12px; }
+    .info span { display:inline-block; margin-right:16px; }
+    .variant-table { width:100%; border-collapse:collapse; margin-top:12px; }
+    .variant-table th, .variant-table td { padding:8px 12px; border:1px solid var(--border); }
+    .variant-table th { background:var(--surface); font-family:var(--mono); font-size:0.75rem; color:var(--muted); }
+    .summary { margin-top:24px; line-height:1.6; }
+    #nglViewer { width:100%; height:400px; margin-top:16px; border:1px solid var(--border); }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/ngl@2.0.0-dev.44/dist/ngl.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>BioForge – Parkinson</h1>
+    <div class="info">
+      <span><strong>Protein:</strong> Alpha-synuclein (Homo sapiens)</span>
+      <span><strong>UniProt ID:</strong> P37840</span>
+      <span><strong>AlphaFold confidence:</strong> N/A</span>
+    </div>
+    <div class="section">
+      <div class="section-title">3D Structure</div>
+      <div id="nglViewer"></div>
+      <script>
+        const stage = new NGL.Stage("nglViewer");
+        stage.loadFile("P37840.pdb").then(component => {
+          component.addRepresentation("cartoon", {color: "spectrum"});
+          component.autoView();
+        });
+      </script>
+    </div>
+    <div class="section">
+      <div class="section-title">Top 10 Variants</div>
+      <table class="variant-table">
+        <thead>
+          <tr><th>Posición</th><th>Cambio</th><th>Impact Score</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>89740000</td>
+            <td>A>T</td>
+            <td>9.8</td>
+          </tr>
+          
+          <tr>
+            <td>89741000</td>
+            <td>A>G</td>
+            <td>9.5</td>
+          </tr>
+          
+          <tr>
+            <td>89742000</td>
+            <td>E>K</td>
+            <td>9.2</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="section">
+      <div class="section-title">Claude Summary</div>
+      <div class="summary">
+        [Claude summary unavailable — 403 Client Error: Forbidden for url: https://api.anthropic.com/v1/messages]
+      </div>
+    </div>
+  </div>
+</body>
+</html>
