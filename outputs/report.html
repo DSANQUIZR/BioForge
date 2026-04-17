@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huntington – BioForge Report</title>
+  <title>Parkinson – BioForge Report</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -35,10 +35,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>BioForge – Huntington</h1>
+    <h1>BioForge – Parkinson</h1>
     <div class="info">
-      <span><strong>Protein:</strong> Huntingtin (Homo sapiens)</span>
-      <span><strong>UniProt ID:</strong> P42858</span>
+      <span><strong>Protein:</strong> Alpha-synuclein (Homo sapiens)</span>
+      <span><strong>UniProt ID:</strong> P37840</span>
       <span><strong>AlphaFold confidence:</strong> N/A</span>
     </div>
     <div class="section">
@@ -46,7 +46,7 @@
       <div id="nglViewer"></div>
       <script>
         const stage = new NGL.Stage("nglViewer");
-        stage.loadFile("P42858_placeholder.pdb").then(component => {
+        stage.loadFile("P37840.pdb").then(component => {
           component.addRepresentation("cartoon", {color: "spectrum"});
           component.autoView();
         });
@@ -61,21 +61,21 @@
         <tbody>
           
           <tr>
-            <td>3076660</td>
-            <td>CAG_repeat</td>
-            <td>9.9</td>
+            <td>89740000</td>
+            <td>A>T</td>
+            <td>9.8</td>
           </tr>
           
           <tr>
-            <td>3076700</td>
-            <td>CAG_repeat</td>
-            <td>9.6</td>
+            <td>89741000</td>
+            <td>A>G</td>
+            <td>9.5</td>
           </tr>
           
           <tr>
-            <td>3076740</td>
-            <td>CAG_repeat</td>
-            <td>9.3</td>
+            <td>89742000</td>
+            <td>E>K</td>
+            <td>9.2</td>
           </tr>
           
         </tbody>

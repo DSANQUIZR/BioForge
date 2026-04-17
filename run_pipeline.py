@@ -4,13 +4,18 @@ import json
 import requests
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
+from dotenv import load_dotenv
 
-# API keys (provided by user)
-ALPHAGEN_KEY = "AIzaSyAEnwuy65Ars2UWNYOiP24_u8r5vUuT9JA"
-CLAUDE_KEY = "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"
+# Load API keys from .env file (never commit .env)
+load_dotenv()
+ALPHAGEN_KEY = os.getenv("ALPHAGEN_KEY", "")
+CLAUDE_KEY   = os.getenv("CLAUDE_KEY", "")
+
+if not CLAUDE_KEY:
+    raise EnvironmentError("CLAUDE_KEY not set — create a .env file with CLAUDE_KEY=<your_key>")
 
 # Constants
-ALPHAFOLD_API = "https://alphafold.ebi.ac.uk/api/prediction"
+ALPHAFOLD_API    = "https://alphafold.ebi.ac.uk/api/prediction"
 UNIPROT_SEARCH_API = "https://rest.uniprot.org/uniprotkb/search"
 
 def get_primary_protein(disease_name: str) -> dict:
