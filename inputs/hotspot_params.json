@@ -1,0 +1,9 @@
+{
+  "target_protein": "Alpha-synuclein",
+  "uniprot_id": "P37840",
+  "domain": "NAC",
+  "chain": "A",
+  "hotspot_residues": [61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95],
+  "design_type": "binder",
+  "notes": "Targeting the NAC domain (res 61-95) to inhibit aggregation."
+}
