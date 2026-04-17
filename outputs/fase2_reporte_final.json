@@ -1,0 +1,24 @@
+{
+  "fecha": "2026-04-17",
+  "fase": "Fase 2 completa",
+  "enfermedad": "Parkinson",
+  "proteina_blanco": "Alpha-sinucleína P37840",
+  "dominio": "NAC residuos 61-95",
+  "modelo_generativo": "EvoDiff OA-DM-38M",
+  "modelo_scoring": "ESMFold API",
+  "gpu": "Tesla T4",
+  "candidato_principal": {
+    "id": "Binder_5",
+    "secuencia": "MTHSATSLRLQVVDQPQMAMKKISASNVTATNLNQNSDDTISQIYLTSNG",
+    "pLDDT": 47.9,
+    "nota": "folding-upon-binding esperado al contactar dominio NAC"
+  },
+  "todos_los_binders": [
+    {"id": "Binder_5", "secuencia": "MTHSATSLRLQVVDQPQMAMKKISASNVTATNLNQNSDDTISQIYLTSNG", "pLDDT": 47.9},
+    {"id": "Binder_4", "secuencia": "MQHPVAPIQSTATITKINAWYYAFECNSKDGGQFGAGPTQNDPTTGAPIP", "pLDDT": 43.6},
+    {"id": "Binder_1", "secuencia": "MPADAGRILFGPAAWVAICLVGAVPGWINRCFDVEGQVLGEVEQTFDHDE", "pLDDT": 42.8},
+    {"id": "Binder_3", "secuencia": "MNAMRGQSSSKPAGLQITALDIIAAQTNLGGGTLARAPFTYRDTAIVSDL", "pLDDT": 42.0},
+    {"id": "Binder_2", "secuencia": "MWRLDFRVWSLDFQAYRACASIMGQISDVAGFSDFRSDRGKLKPGVESAE", "pLDDT": 38.6}
+  ],
+  "siguiente_paso": "DiffDock scoring contra P37840_NAC.pdb"
+}
