@@ -1,0 +1,16 @@
+{
+  "fase": "Fase 2 — Scoring completado",
+  "fecha": "2026-04-18",
+  "candidato": "Binder_5",
+  "secuencia": "MTHSATSLRLQVVDQPQMAMKKISASNVTATNLNQNSDDTISQIYLTSNG",
+  "blanco": "NAC Alpha-sinucleína (residuos 61-95)",
+  "modelo_scoring": "Boltz-2 CPU",
+  "scores": {
+    "confidence_score": 0.291,
+    "ptm": 0.151,
+    "iptm": 0.080,
+    "complex_plddt": 34.4
+  },
+  "interpretacion": "Score bajo esperado en CPU con pasos mínimos. Requiere GPU + diseño condicionado.",
+  "siguiente_paso": "RFdiffusion condicionado al dominio NAC + Boltz-2 GPU con parámetros completos"
+}
