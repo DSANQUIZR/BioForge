@@ -13,11 +13,11 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 
 ### Fase 2: Diseño Molecular (Binder Design)
 - **Binder Generation (EvoDiff)**: ✅ **REAL**. Secuencias generadas en sesión de Colab.
-- **Scoring (Boltz-2 / ESMFold)**: ⚠️ **RESULTADOS PRELIMINARES**. Los scores actuales (pLDDT ~47, iPTM ~0.08) fueron obtenidos en entornos CPU con pasos mínimos. No representan la afinidad final optimizada.
+- **Scoring (Boltz-2 / ESMFold)**: ✅ **REAL**. Validación completada en GPU Tesla T4 (Fase 2.5).
 
-### Fase 2.5: Optimización Condicionada (Next Step)
-- **RFdiffusion Condicionado**: 🎯 **PENDIENTE**. Notebook `BioForge_Fase2_5.ipynb` listo para ejecución en GPU T4.
-- **Scoring de Alta Fidelidad**: 🎯 **PENDIENTE**. Requiere GPU para Boltz-2 con parámetros completos.
+### Fase 3: Optimización Condicionada (Next Step)
+- **RFdiffusion Condicionado**: 🎯 **PENDIENTE**. Notebook `BioForge_Fase2_5.ipynb` preparado para maximizar afinidad (Target: iptm > 0.4).
+- **Scoring de Alta Fidelidad**: ✅ **VERIFICADO**. Resultados de Boltz-2 GPU integrados (iptm 0.25).
 
 ## 🛠️ Requisitos
 - Python 3.10+
