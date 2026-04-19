@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-04-19",
+  "fase": "Fase 3 \u2014 Dise\u00f1o condicionado con ProteinMPNN",
+  "blanco": "NAC Alpha-sinucle\u00edna EQVTNVGGAVVTGVTAVAQKTV",
+  "hardware": "Tesla T4 GPU",
+  "candidato_principal": {
+    "id": "MPNN_6",
+    "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
+    "iptm": 0.709,
+    "confidence": 0.722,
+    "estado": "VIABLE para s\u00edntesis experimental"
+  },
+  "todos_los_candidatos": [
+    {
+      "id": "MPNN_6",
+      "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
+      "iptm": 0.709,
+      "confidence": 0.722
+    },
+    {
+      "id": "MPNN_3",
+      "secuencia": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGAL",
+      "iptm": 0.674,
+      "confidence": 0.695
+    },
+    {
+      "id": "MPNN_7",
+      "secuencia": "AAAAALGAAAAAALAAAAAAAAAAAAAALAASGAL",
+      "iptm": 0.323,
+      "confidence": 0.652
+    }
+  ],
+  "progresion_iptm": {
+    "CPU_sin_condicionamiento": 0.08,
+    "GPU_sin_condicionamiento": 0.25,
+    "GPU_ProteinMPNN_condicionado": 0.709
+  },
+  "siguiente_paso": "S\u00edntesis experimental + validaci\u00f3n en laboratorio"
+}

@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-04-19",
+  "enfermedad": "Vitiligo",
+  "blanco": "JAK1 dominio kinasa (P23458, residuos 866-1154)",
+  "mecanismo": "Inhibicion de la via JAK-STAT para reducir ataque autoinmune a melanocitos",
+  "hardware": "Tesla T4 GPU",
+  "candidato_principal": {
+    "id": "JAK1_MPNN_4",
+    "iptm": 0.673,
+    "confidence": 0.772,
+    "estado": "VIABLE para sintesis experimental"
+  },
+  "todos_los_candidatos": [
+    {
+      "id": "JAK1_MPNN_4",
+      "iptm": 0.673,
+      "confidence": 0.772
+    },
+    {
+      "id": "JAK1_MPNN_5",
+      "iptm": 0.654,
+      "confidence": 0.779
+    },
+    {
+      "id": "JAK1_MPNN_6",
+      "iptm": 0.64,
+      "confidence": 0.764
+    }
+  ],
+  "comparacion_ruxolitinib": "JAK1_MPNN_4 requiere validacion experimental vs inhibidor aprobado",
+  "siguiente_paso": "Sintesis del peptido + ensayo de inhibicion JAK1 in vitro"
+}
