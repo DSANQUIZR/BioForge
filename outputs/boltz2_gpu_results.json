@@ -1,0 +1,36 @@
+{
+  "fecha": "2026-04-19",
+  "fase": "Fase 2.5 \u2014 Scoring GPU completo",
+  "candidato": "Binder_5",
+  "secuencia": "MTHSATSLRLQVVDQPQMAMKKISASNVTATNLNQNSDDTISQIYLTSNG",
+  "blanco": "NAC Alpha-sinucle\u00edna EQVTNVGGAVVTGVTAVAQKTV",
+  "hardware": "Tesla T4 GPU",
+  "parametros": {
+    "recycling_steps": 3,
+    "sampling_steps": 200,
+    "diffusion_samples": 3
+  },
+  "scores": {
+    "modelo_0": {
+      "confidence": 0.425,
+      "ptm": 0.452,
+      "iptm": 0.25,
+      "plddt": 46.9
+    },
+    "modelo_1": {
+      "confidence": 0.384,
+      "ptm": 0.347,
+      "iptm": 0.134,
+      "plddt": 44.7
+    },
+    "modelo_2": {
+      "confidence": 0.418,
+      "ptm": 0.368,
+      "iptm": 0.177,
+      "plddt": 47.8
+    }
+  },
+  "mejor_modelo": "modelo_0",
+  "interpretacion": "iptm 0.250 \u2014 interacci\u00f3n d\u00e9bil pero 3x mejor que CPU. Requiere dise\u00f1o condicionado para iptm > 0.4",
+  "siguiente_paso": "Fase 3: ProteinMPNN condicionado al sitio NAC para generar binders con mayor afinidad"
+}
