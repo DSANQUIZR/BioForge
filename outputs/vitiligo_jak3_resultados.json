@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-04-19",
+  "enfermedad": "Vitiligo",
+  "blanco": "JAK3 dominio kinasa P52333 residuos 781-1124",
+  "ventaja_vs_ruxolitinib": "JAK3 exclusivo de celulas inmunes — menos efectos secundarios esperados",
+  "candidato_principal": {
+    "id": "JAK3_MPNN_5",
+    "iptm": 0.784,
+    "confidence": 0.63,
+    "estado": "MEJOR CANDIDATO — supera JAK1 y se acerca a umbral de excelencia"
+  },
+  "todos_los_candidatos": [
+    {
+      "id": "JAK3_MPNN_5",
+      "iptm": 0.784,
+      "confidence": 0.63
+    },
+    {
+      "id": "JAK3_MPNN_2",
+      "iptm": 0.471,
+      "confidence": 0.562
+    },
+    {
+      "id": "JAK3_MPNN_10",
+      "iptm": 0.434,
+      "confidence": 0.539
+    }
+  ],
+  "ranking_vitiligo_completo": {
+    "1_JAK3_MPNN_5": {
+      "iptm": 0.784,
+      "blanco": "JAK3"
+    },
+    "2_JAK1_MPNN_4": {
+      "iptm": 0.673,
+      "blanco": "JAK1"
+    },
+    "3_TYRP1_MPNN_1": {
+      "iptm": 0.514,
+      "blanco": "TYRP1"
+    },
+    "referencia_ruxolitinib": {
+      "blanco": "JAK1+JAK2",
+      "aprobado": true
+    }
+  },
+  "siguiente_paso": "Optimizar JAK3_MPNN_5 con temperatura 0.05 para intentar superar 0.8"
+}

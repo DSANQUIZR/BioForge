@@ -17,7 +17,16 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 
 ### Fase 3: Optimización Condicionada (Breakthrough)
 - **RFdiffusion + ProteinMPNN**: ✅ **COMPLETADA**. Diseño condicionado al sitio activo.
-- **Resultados Viables**: ✅ **VERIFICADOS**. Binders logrados con ipTM > 0.65 para Parkinson y Vitiligo.
+- **Hito de Vitiligo**: 🏆 **JAK3_MPNN_5 logrando ipTM 0.784**. Candidato potencialmente más selectivo que Ruxolitinib.
+
+#### Comparativa Vitiligo Final:
+| Candidato | Blanco | ipTM | Estado |
+|---|---|---|---|
+| **JAK3_MPNN_5** | **JAK3** | **0.784** | 🏆 Mejor candidato |
+| JAK1_MPNN_4 | JAK1 | 0.673 | ✅ Viable |
+| TYRP1_MPNN_1 | TYRP1 | 0.514 | ⚠️ Moderado |
+| Ruxolitinib | JAK1+JAK2 | — | ✅ Aprobado |
+
 
 ## 🛠️ Requisitos
 - Python 3.10+

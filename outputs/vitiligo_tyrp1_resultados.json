@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-04-19",
+  "enfermedad": "Vitiligo",
+  "blanco": "TYRP1 P17643 — proteccion melanocito",
+  "flanco": "Flanco 2 — complementario a JAK1",
+  "candidato_principal": {
+    "id": "TYRP1_MPNN_1",
+    "iptm": 0.514,
+    "confidence": 0.513,
+    "estado": "Moderado — requiere optimizacion o anticuerpo (Chai-2)"
+  },
+  "todos_los_candidatos": [
+    {
+      "id": "TYRP1_MPNN_1",
+      "iptm": 0.514,
+      "confidence": 0.513
+    },
+    {
+      "id": "TYRP1_MPNN_7",
+      "iptm": 0.491,
+      "confidence": 0.539
+    },
+    {
+      "id": "TYRP1_MPNN_4",
+      "iptm": 0.43,
+      "confidence": 0.514
+    }
+  ],
+  "estrategia_combinada": {
+    "flanco1": {
+      "blanco": "JAK1",
+      "candidato": "JAK1_MPNN_4",
+      "iptm": 0.673
+    },
+    "flanco2": {
+      "blanco": "TYRP1",
+      "candidato": "TYRP1_MPNN_1",
+      "iptm": 0.514
+    },
+    "siguiente_paso": "Chai-2 Fase 4 para anticuerpo biespécifico JAK1+TYRP1"
+  }
+}
