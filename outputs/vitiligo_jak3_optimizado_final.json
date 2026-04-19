@@ -1,0 +1,52 @@
+{
+  "fecha": "2026-04-19",
+  "enfermedad": "Vitiligo",
+  "candidato_principal": {
+    "id": "JAK3_OPT_2",
+    "blanco": "JAK3 P52333 dominio kinasa residuos 781-1124",
+    "iptm": 0.848,
+    "confidence": 0.642,
+    "temperatura_mpnn": 0.05,
+    "estado": "ALTA CONFIANZA — supera umbral 0.8",
+    "ventaja_vs_ruxolitinib": "JAK3 exclusivo celulas inmunes — menor toxicidad esperada"
+  },
+  "ranking_completo": [
+    {
+      "id": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "blanco": "JAK3",
+      "temp": 0.05
+    },
+    {
+      "id": "JAK3_OPT_10",
+      "iptm": 0.82,
+      "blanco": "JAK3",
+      "temp": 0.05
+    },
+    {
+      "id": "JAK3_MPNN_5",
+      "iptm": 0.784,
+      "blanco": "JAK3",
+      "temp": 0.1
+    },
+    {
+      "id": "JAK1_MPNN_4",
+      "iptm": 0.673,
+      "blanco": "JAK1",
+      "temp": 0.1
+    },
+    {
+      "id": "TYRP1_MPNN_1",
+      "iptm": 0.514,
+      "blanco": "TYRP1",
+      "temp": 0.1
+    }
+  ],
+  "progresion_bioforge": {
+    "CPU_sin_condicionamiento": 0.08,
+    "GPU_sin_condicionamiento": 0.25,
+    "ProteinMPNN_temp_010": 0.784,
+    "ProteinMPNN_temp_005": 0.848
+  },
+  "siguiente_paso": "Chai-2 anticuerpo biespécifico JAK3+TYRP1 — Fase 4"
+}

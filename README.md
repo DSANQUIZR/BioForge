@@ -17,12 +17,13 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 
 ### Fase 3: Optimización Condicionada (Breakthrough)
 - **RFdiffusion + ProteinMPNN**: ✅ **COMPLETADA**. Diseño condicionado al sitio activo.
-- **Hito de Vitiligo**: 🏆 **JAK3_MPNN_5 logrando ipTM 0.784**. Candidato potencialmente más selectivo que Ruxolitinib.
+- **Récord de BioForge**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
 
-#### Comparativa Vitiligo Final:
+#### Comparativa Vitiligo Final (Optimizado):
 | Candidato | Blanco | ipTM | Estado |
 |---|---|---|---|
-| **JAK3_MPNN_5** | **JAK3** | **0.784** | 🏆 Mejor candidato |
+| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Alta confianza |
+| JAK3_MPNN_5 | JAK3 | 0.784 | ✅ Viable |
 | JAK1_MPNN_4 | JAK1 | 0.673 | ✅ Viable |
 | TYRP1_MPNN_1 | TYRP1 | 0.514 | ⚠️ Moderado |
 | Ruxolitinib | JAK1+JAK2 | — | ✅ Aprobado |
