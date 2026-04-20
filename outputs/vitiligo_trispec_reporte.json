@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-04-20",
+  "experimento": "Molécula trispecífica vitiligo — JAK3+JAK1+TYRP1",
+  "resultado": "ipTM bajo (0.38 máximo) — método de evaluación inadecuado para molécula larga",
+  "conclusion": "Terapia combinada (3 péptidos separados) es estrategia viable actual",
+  "linker_optimo": {
+    "tipo": "short_GS",
+    "secuencia": "GGSGGS",
+    "longitud": 6,
+    "iptm_combinado": 0.38,
+    "razon": "Linker más corto preserva mejor estructura de cada dominio"
+  },
+  "estrategia_final_vitiligo": {
+    "modalidad": "Terapia combinada — 3 péptidos separados",
+    "componente_1": {
+      "id": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "mecanismo": "Inhibe JAK3 — exclusivo células inmunes"
+    },
+    "componente_2": {
+      "id": "JAK1_NEW_3",
+      "iptm": 0.744,
+      "mecanismo": "Inhibe JAK1 — señalización inmune"
+    },
+    "componente_3": {
+      "id": "TYRP1_OPT_8",
+      "iptm": 0.626,
+      "mecanismo": "Protege melanocito directamente"
+    }
+  },
+  "fase_4_pendiente": "Chai-2 para anticuerpo biespecífico JAK3+TYRP1 real"
+}
