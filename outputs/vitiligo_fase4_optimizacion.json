@@ -1,0 +1,64 @@
+{
+  "fecha": "2026-04-20",
+  "sesion": "Fase 4 — Optimización JAK1 + TYRP1",
+  "avances": {
+    "TYRP1_OPT_8": {
+      "iptm": 0.626,
+      "confidence": 0.585,
+      "temperatura": 0.05,
+      "seed": 53,
+      "vs_baseline": "+11% sobre TYRP1_MPNN_1 (0.514)",
+      "estado": "VIABLE — cruza umbral 0.6"
+    },
+    "JAK1_NEW_3": {
+      "iptm": 0.744,
+      "confidence": 0.749,
+      "temperatura": 0.1,
+      "seed": 99,
+      "vs_baseline": "+10% sobre JAK1_MPNN_4 (0.673)",
+      "estado": "VIABLE — nuevo mejor JAK1"
+    }
+  },
+  "leccion_aprendida": {
+    "JAK3": "temp=0.05 mejora (+8%) — espacio convergente",
+    "JAK1": "seed diverso mejora (+10%) — espacio diverso, no usar temp=0.05",
+    "TYRP1": "temp=0.05 mejora (+11%) — espacio convergente como JAK3"
+  },
+  "cuadro_vitiligo_completo": [
+    {
+      "id": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "blanco": "JAK3"
+    },
+    {
+      "id": "JAK3_OPT_10",
+      "iptm": 0.82,
+      "blanco": "JAK3"
+    },
+    {
+      "id": "JAK3_MPNN_5",
+      "iptm": 0.784,
+      "blanco": "JAK3"
+    },
+    {
+      "id": "JAK1_NEW_3",
+      "iptm": 0.744,
+      "blanco": "JAK1"
+    },
+    {
+      "id": "JAK1_MPNN_4",
+      "iptm": 0.673,
+      "blanco": "JAK1"
+    },
+    {
+      "id": "TYRP1_OPT_8",
+      "iptm": 0.626,
+      "blanco": "TYRP1"
+    },
+    {
+      "id": "TYRP1_MPNN_1",
+      "iptm": 0.514,
+      "blanco": "TYRP1"
+    }
+  ]
+}

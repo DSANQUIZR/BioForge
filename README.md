@@ -22,10 +22,12 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 #### Comparativa Vitiligo Final (Optimizado):
 | Candidato | Blanco | ipTM | Estado |
 |---|---|---|---|
-| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Alta confianza |
-| JAK3_MPNN_5 | JAK3 | 0.784 | ✅ Viable |
+| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Récord |
+| JAK3_OPT_10 | JAK3 | 0.820 | ✅ Alta confianza |
+| **JAK1_NEW_3** | **JAK1** | **0.744** | ✅ Nuevo récord JAK1 |
 | JAK1_MPNN_4 | JAK1 | 0.673 | ✅ Viable |
-| TYRP1_MPNN_1 | TYRP1 | 0.514 | ⚠️ Moderado |
+| **TYRP1_OPT_8** | **TYRP1** | **0.626** | ✅ Ahora viable (temp 0.05) |
+| TYRP1_MPNN_1 | TYRP1 | 0.514 | ⚠️ Superado |
 | Ruxolitinib | JAK1+JAK2 | — | ✅ Aprobado |
 
 
