@@ -53,22 +53,31 @@ contra un blanco proteico de interés terapéutico.
 | 0.6-0.8 | Viable — candidato para síntesis |
 | > 0.8 | Alta confianza — candidato pre-clínico |
 
-### Paso 8 — Optimización iterativa (si ipTM < objetivo)
-- Repetir Paso 4 con sampling_temp reducida:
-  - temp=0.05 → refinamiento (mejora típica +5-10%)
-  - temp=0.02 → último recurso (riesgo de convergencia)
-- Scorear nuevamente con Boltz-2
-- Documentar progresión
+### Paso 8 — Optimización iterativa (Matriz de Decisiones)
+No todos los blancos responden igual a la temperatura. Aplicar el siguiente flujo:
+
+1. **Intento 1 (Base)**: `temp=0.10` / `seed=42`.
+2. **Intento 2 (Refinamiento)**: `temp=0.05` / `seed=42`.
+   - **Si ipTM aumenta (>5%)**: El espacio es *convergente*. Probar `temp=0.02` para exprimir afinidad.
+   - **Si ipTM NO mejora**: El espacio es *diverso*. Proceder al Intento 3.
+3. **Intento 3 (Diversidad)**: `temp=0.10` / `seed=99` (o seed aleatorio).
+   - El cambio de seed en espacios diversos es más efectivo que bajar la temperatura.
+
+## Lecciones Críticas: Temperatura vs Seed
+| Proteína | Comportamiento | Estrategia Óptima | Mejora lograda |
+|----------|----------------|-------------------|----------------|
+| JAK3 | Convergente | `temp=0.05` | +8% ipTM |
+| JAK1 | Diverso | `seed=99` | +10% ipTM |
+| TYRP1 | Convergente | `temp=0.05` | +11% ipTM |
 
 ## Resultados verificados BioForge (Abril 2026)
 
 | Enfermedad | Blanco | Temp | Candidato | ipTM | Estado |
 |-----------|--------|------|-----------|------|--------|
 | Parkinson | SNCA NAC | 0.10 | MPNN_6 | 0.709 | ✅ Viable |
-| Vitiligo | JAK1 | 0.10 | JAK1_MPNN_4 | 0.673 | ✅ Viable |
-| Vitiligo | TYRP1 | 0.10 | TYRP1_MPNN_1 | 0.514 | ⚠️ Moderado |
-| Vitiligo | JAK3 | 0.10 | JAK3_MPNN_5 | 0.784 | ✅ Viable |
-| Vitiligo | JAK3 | 0.05 | JAK3_OPT_2 | 0.848 | 🏆 Alta confianza |
+| Vitiligo | JAK1 | 0.10 | JAK1_NEW_3 | 0.744 | ✅ Nuevo Récord JAK1 |
+| Vitiligo | TYRP1 | 0.05 | TYRP1_OPT_8 | 0.626 | ✅ Ahora Viable |
+| Vitiligo | JAK3 | 0.05 | JAK3_OPT_2 | 0.848 | 🏆 Récord Absoluto |
 
 ## Infraestructura requerida
 - Google Colab con GPU T4 (gratuito, límite ~4-6 horas/día)

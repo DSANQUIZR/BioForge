@@ -20,15 +20,14 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 - **Récord de BioForge**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
 
 #### Comparativa Vitiligo Final (Optimizado):
-| Candidato | Blanco | ipTM | Estado |
+| Candidato | Blanco | ipTM | Estrategia |
 |---|---|---|---|
-| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Récord |
-| JAK3_OPT_10 | JAK3 | 0.820 | ✅ Alta confianza |
-| **JAK1_NEW_3** | **JAK1** | **0.744** | ✅ Nuevo récord JAK1 |
-| JAK1_MPNN_4 | JAK1 | 0.673 | ✅ Viable |
-| **TYRP1_OPT_8** | **TYRP1** | **0.626** | ✅ Ahora viable (temp 0.05) |
-| TYRP1_MPNN_1 | TYRP1 | 0.514 | ⚠️ Superado |
-| Ruxolitinib | JAK1+JAK2 | — | ✅ Aprobado |
+| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Récord (Temp 0.05) |
+| **JAK1_NEW_3** | **JAK1** | **0.744** | ✅ Récord (Seed 99) |
+| **TYRP1_OPT_8** | **TYRP1** | **0.626** | ✅ Viable (Temp 0.05) |
+
+> [!NOTE]
+> BioForge utiliza ahora una **Matriz de Optimización**: blancos *convergentes* (JAK3/TYRP1) requieren bajar temperatura, mientras que blancos *diversos* (JAK1) requieren rotación de seed.
 
 
 ## 🛠️ Requisitos
