@@ -69,12 +69,13 @@ No todos los blancos responden igual a la temperatura. Aplicar el siguiente fluj
 | JAK3 | Convergente | `temp=0.05` | +8% ipTM |
 | JAK1 | Diverso | `seed=99` | +10% ipTM |
 | TYRP1 | Convergente | `temp=0.05` | +11% ipTM |
+| **Parkinson NAC**| **Diverso** | **Scorear todos** | **+10% ipTM** |
 
 ## Resultados verificados BioForge (Abril 2026)
 
 | Enfermedad | Blanco | Temp | Candidato | ipTM | Estado |
 |-----------|--------|------|-----------|------|--------|
-| Parkinson | SNCA NAC | 0.10 | MPNN_6 | 0.709 | ✅ Viable |
+| Parkinson | SNCA NAC | 0.10 | PARK_010_3 | 0.811 | 🏆 Récord Parkinson |
 | Vitiligo | JAK1 | 0.10 | JAK1_NEW_3 | 0.744 | ✅ Nuevo Récord JAK1 |
 | Vitiligo | TYRP1 | 0.05 | TYRP1_OPT_8 | 0.626 | ✅ Ahora Viable |
 | Vitiligo | JAK3 | 0.05 | JAK3_OPT_2 | 0.848 | 🏆 Récord Absoluto |

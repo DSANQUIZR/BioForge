@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-04-20",
+  "enfermedad": "Parkinson",
+  "blanco": "Alpha-sinucleína dominio NAC P37840 residuos 61-95",
+  "experimento": "Matriz 3 temperaturas — seed=42",
+  "hallazgo": "Espacio diverso — temp=0.10 y 0.05 idénticas. Candidatos distintos dentro del mismo run.",
+  "candidato_principal": {
+    "id": "PARK_010_3",
+    "secuencia": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGAL",
+    "iptm": 0.811,
+    "confidence": 0.768,
+    "temperatura": 0.1,
+    "seed": 42,
+    "estado": "ALTA CONFIANZA — supera umbral 0.8"
+  },
+  "todos_los_candidatos": [
+    {
+      "id": "PARK_010_3",
+      "iptm": 0.811,
+      "temp": 0.1
+    },
+    {
+      "id": "MPNN_6",
+      "iptm": 0.709,
+      "temp": 0.1
+    },
+    {
+      "id": "PARK_002_6",
+      "iptm": 0.632,
+      "temp": 0.02
+    },
+    {
+      "id": "PARK_010_6",
+      "iptm": 0.491,
+      "temp": 0.1
+    },
+    {
+      "id": "PARK_010_7",
+      "iptm": 0.39,
+      "temp": 0.1
+    }
+  ],
+  "leccion_matriz": "Parkinson NAC es espacio diverso. Scorear todos los candidatos, no solo top-3 por score MPNN.",
+  "progresion": {
+    "Binder_5_CPU": 0.08,
+    "Binder_5_GPU": 0.25,
+    "MPNN_6": 0.709,
+    "PARK_010_3": 0.811
+  }
+}

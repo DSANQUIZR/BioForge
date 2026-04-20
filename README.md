@@ -16,15 +16,17 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 - **Scoring (Boltz-2 / ESMFold)**: ✅ **REAL**. Validación completada en GPU Tesla T4.
 
 ### Fase 3: Optimización Condicionada (Breakthrough)
-- **RFdiffusion + ProteinMPNN**: ✅ **COMPLETADA**. Diseño condicionado al sitio activo.
-- **Récord de BioForge**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
+- **RFdiffusion + ProteinMPNN**: ✅ **COMPLETADA**.
+- **Hito Parkinson**: 🏆 **PARK_010_3 logrando ipTM 0.811**. Candidato de alta confianza (>0.8).
+- **Hito Vitiligo**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
 
-#### Comparativa Vitiligo Final (Optimizado):
-| Candidato | Blanco | ipTM | Estrategia |
+#### Estado Actual de BioForge:
+| Enfermedad | Mejor Candidato | ipTM | Estado |
 |---|---|---|---|
-| **JAK3_OPT_2** | **JAK3** | **0.848** | 🏆 Récord (Temp 0.05) |
-| **JAK1_NEW_3** | **JAK1** | **0.744** | ✅ Récord (Seed 99) |
-| **TYRP1_OPT_8** | **TYRP1** | **0.626** | ✅ Viable (Temp 0.05) |
+| **Vitiligo** | **JAK3_OPT_2** | **0.848** | 🏆 Récord Absoluto |
+| **Parkinson** | **PARK_010_3** | **0.811** | 🏆 Récord Parkinson |
+| Vitiligo (JAK1) | JAK1_NEW_3 | 0.744 | ✅ Viable |
+| Vitiligo (TYRP1) | TYRP1_OPT_8 | 0.626 | ✅ Viable |
 
 > [!NOTE]
 > BioForge utiliza ahora una **Matriz de Optimización**: blancos *convergentes* (JAK3/TYRP1) requieren bajar temperatura, mientras que blancos *diversos* (JAK1) requieren rotación de seed.
