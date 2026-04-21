@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-04-21",
+  "enfermedad": "HLB (Citrus Greening)",
+  "blanco": "CTP Sintasa CLas (C6XHC5)",
+  "dominio": "Glutaminasa (residuos 1-270)",
+  "metodo": "ProteinMPNN - Colab verificado",
+  "tiempo_ejecucion": "18.7355 segundos",
+  "candidatos_top": [
+    {
+      "id": "Sample_6",
+      "score": 0.7882,
+      "secuencia": "MTKLIFVLGGVAPGLGKSLTAAAIGKLLIEKGFKVKLKKLSPGLALDPSTLDPAVHGPVAWTPDGGAAPP"
+    },
+    {
+      "id": "Sample_1",
+      "score": 0.7942,
+      "secuencia": "MTKYIFVLGGVAPGLGKSLTSAAIARLLISKGFKVRCKDLDPGPWLSPAGLDPAEHGPVVWTPDGGAMPP"
+    },
+    {
+      "id": "Sample_2",
+      "score": 0.7978,
+      "secuencia": "KTKYIFVVGGVRPGLGKSLTTAALARLLIEEGYKVRCKDLDPGPYLSPAGLDEAEHGPVYRTPDGGALPP"
+    }
+  ],
+  "estado": "PENDIENTE de scoring en Boltz-2 (Mañana)"
+}
