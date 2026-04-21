@@ -4,7 +4,7 @@
   "blanco": "CTP Sintasa CLas (C6XHC5)",
   "dominio": "Glutaminasa (residuos 1-270)",
   "metodo": "ProteinMPNN - Colab verificado",
-  "tiempo_ejecucion": "18.7355 segundos",
+  "tiempo_ejecucion": "12.6997 segundos",
   "candidatos_top": [
     {
       "id": "Sample_6",

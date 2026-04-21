@@ -1,48 +1,24 @@
 {
   "fecha": "2026-04-20",
-  "enfermedad": "Parkinson — CERRADO",
+  "enfermedad": "Parkinson",
   "blanco": "Alpha-sinucleína dominio NAC P37840 residuos 61-95",
+  "experimento": "Matriz 3 temperaturas — seed=42",
+  "hallazgo": "Espacio diversos — temp=0.10 y 0.05 idénticas. PARK_010_3 identificado.",
   "candidato_principal": {
     "id": "PARK_010_3",
     "secuencia": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGAL",
     "iptm": 0.811,
     "confidence": 0.768,
-    "temperatura": 0.1,
+    "temperatura": 0.10,
     "seed": 42,
-    "longitud": 35,
-    "estado": "ALTA CONFIANZA — candidato pre-clínico",
-    "sintesis": {
-      "sequence": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGAL",
-      "length": "35 amino acids",
-      "purity": ">95% HPLC purified",
-      "scale": "2mg",
-      "format": "Lyophilized powder",
-      "proveedor_recomendado": "GenScript genscript.com",
-      "costo_estimado": "$250-350 USD"
-    }
+    "estado": "ALTA CONFIANZA — supera umbral 0.8",
+    "sintesis_estimada": "2mg GenScript ~$300 USD"
   },
-  "segunda_opcion": {
-    "id": "MPNN_6",
-    "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
-    "iptm": 0.709,
-    "estado": "Viable — comparador experimental"
-  },
-  "fusion_evaluada": {
-    "secuencia": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGALGGSGGSELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
-    "iptm": 0.428,
-    "conclusion": "Cóctel separado preferido sobre fusión"
-  },
-  "progresion_completa": {
-    "Binder_5_CPU": 0.08,
-    "Binder_5_GPU": 0.25,
-    "MPNN_6_seed42": 0.709,
-    "PARK_010_3_seed42": 0.811
-  },
-  "leccion_espacio": "NAC es espacio diverso — scorear todos los candidatos, no solo top-3 MPNN",
-  "siguiente_paso_experimental": [
-    "1. Sintetizar PARK_010_3 2mg en GenScript (~$300 USD)",
-    "2. Validar estructura con CD y espectrometría de masas",
-    "3. Ensayo ThT inhibición agregación Alpha-sinucleína",
-    "4. Contactar laboratorio Universidad de los Andes o Nacional"
-  ]
+  "leccion_matriz": "Parkinson NAC es espacio diverso. Scorear todos los candidatos, no solo top-3 por score MPNN.",
+  "progresion": {
+    "Binder_5_CPU": 0.080,
+    "Binder_5_GPU": 0.250,
+    "MPNN_6": 0.709,
+    "PARK_010_3": 0.811
+  }
 }
