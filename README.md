@@ -21,15 +21,19 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 - **Hito Vitiligo**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
 
 #### Estado Actual de BioForge:
-| Enfermedad | Mejor Candidato | ipTM | Estado |
+| Enfermedad | Mejor Candidato | ipTM | Estado / Estrategia |
 |---|---|---|---|
-| **Vitiligo** | **JAK3_OPT_2** | **0.848** | 🏆 Récord Absoluto |
-| **Parkinson** | **PARK_010_3** | **0.811** | 🏆 Récord Parkinson |
-| Vitiligo (JAK1) | JAK1_NEW_3 | 0.744 | ✅ Viable |
-| Vitiligo (TYRP1) | TYRP1_OPT_8 | 0.626 | ✅ Viable |
+| **Vitiligo** | **JAK3_OPT_2** | **0.848** | 🏆 Récord (Péptido Individual) |
+| **Parkinson** | **PARK_010_3** | **0.811** | 🏆 Récord (Péptido Individual) |
+| Vitiligo (JAK1) | JAK1_NEW_3 | 0.744 | ✅ Viable (Seed 99) |
+| Vitiligo (TYRP1) | TYRP1_OPT_8 | 0.626 | ✅ Viable (Temp 0.05) |
+| **HLB (Greening)**| **Sample 6**  | *TBD* | 🧪 ProteinMPNN Listo (Scoring pend.) |
+
+> [!IMPORTANT]
+> **Lección Vitiligo**: El diseño de una molécula trispecífica fusionada fue descartado tras obtener un **ipTM máximo de 0.380**. La estrategia final validada es la **terapia combinada de 3 péptidos independientes** atacando JAK3, JAK1 y TYRP1 simultáneamente.
 
 > [!NOTE]
-> BioForge utiliza ahora una **Matriz de Optimización**: blancos *convergentes* (JAK3/TYRP1) requieren bajar temperatura, mientras que blancos *diversos* (JAK1) requieren rotación de seed.
+> BioForge utiliza una **Matriz de Optimización**: blancos *convergentes* (JAK3/TYRP1) requieren bajar temperatura, mientras que blancos *diversos* (JAK1/Parkinson) requieren rotación de seed y scoring exhaustivo de todos los candidatos.
 
 
 ## 🛠️ Requisitos
