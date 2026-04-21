@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-04-20",
+  "enfermedad": "Huanglongbing (HLB) — Green Citrusing",
+  "blanco": "CTP Synthase CLas (C6XHC5) dominio ATP",
+  "experimento": "Diseño de péptidos inhibidores — Primer Scoring Boltz-2",
+  "candidatos_mpnn_top3": [
+    {
+      "id": "HLB_CTP_2",
+      "mpnn_score": 0.7807,
+      "secuencia": "MTKIIFVLGGVRPGLGKSLTSAAIARLLIEEGFKVKVKKLSPDDYLDPSTLDPAEHGPVARTKDGGALPPSFLDYERFTGQEMTASDYLSRGAVVARVEAKAAAGEFNGEEVAEEPHLTDEIRDFILKGNEEYDFVIVDVGGVVGDPRVEPFLAAIARLRKEIAAKGEKVLVILVGLVPYDPERGRLDPAPVVEAVARLRALGIEPDIILARSDRPLPEELLREIAERCGVPYENVIPAPRVADPDLLPAALREAGLVRQILKLFGIENV",
+      "iptm": "N/A",
+      "confidence": "N/A"
+    },
+    {
+      "id": "HLB_CTP_3",
+      "mpnn_score": 0.7828,
+      "secuencia": "STKLIFVLGGVRPGLGKSLTTAAIARLLREEGFKVRCKILSPLPALDPSTLDPAVHGPVAWTPDGGAMPPGVRLFERFTGVEMTAADYLTRGAVEARVAAKAAAGEYGGRPVAEDPHLTDEIRAWILAGTEDYDFVIVDVGGVVGDPAVRPFLAAIRRLREELAAQGRRALVVLVVDVPYDPEKGRYDPTPAIEAVAKLKALGITPDVILARSDGPIPEELKREIAERCGVPLENVIEYPKVPDPELVPEVLRENGLVEVILKLFGIENV",
+      "iptm": "N/A",
+      "confidence": "N/A"
+    },
+    {
+      "id": "HLB_CTP_8",
+      "mpnn_score": 0.7896,
+      "secuencia": "MTKYIFVVGGVRPGLGKSLLSAALARLLIDEGFKVKCKKLSPGDYLDPAGLDPAVHGPVRRTPDGGAMPPSFGIFEEFTGQEMTAADYLTRGAVRARVAAAAAAGEYGGRPVADDPHLTDEIRAWILAGTENYDFVIVDIGGVVGDPRVEPFLRAVRALREELAAQGERALVVLLVDAPYDEATGRLDPRPVIEAVARLRALGITPDIIAVRADRPIPRELLELIARECGVPLENVIEVPRVPDPRLLPAALRAAGLLDQVLRAFGIENV",
+      "iptm": "N/A",
+      "confidence": "N/A"
+    }
+  ],
+  "evaluacion_preliminar": "Se necesitan scores de Boltz-2 completos para una evaluación final. Los scores de MPNN sugieren buenos candidatos, pero la afinidad real se determinará con Boltz-2.",
+  "siguiente_paso": "Re-ejecutar la celda anterior con GPU activa para obtener scores Boltz-2 y finalizar el ranking."
+}
