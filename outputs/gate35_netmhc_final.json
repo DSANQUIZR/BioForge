@@ -1,0 +1,172 @@
+{
+  "fecha": "2026-04-23",
+  "gate": "3.5 — ADMET + NetMHCpan HLA-A*02:01 9-mer EL predictions",
+  "herramienta": "NetMHCpan 4.1b — DTU Health Tech — https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+  "configuracion": {
+    "alelo": "HLA-A*02:01",
+    "longitud_peptidos": "9-mer",
+    "tipo_prediccion": "EL (Eluted Ligand)",
+    "umbral_SB": "%Rank < 0.500",
+    "umbral_WB": "%Rank < 2.000"
+  },
+  "resultados": {
+    "JAK3_OPT_2": {
+      "iptm": 0.848,
+      "blanco": "JAK3 kinasa P52333",
+      "longitud": 70,
+      "tipo_molecula": "proteina",
+      "admet": "PASA",
+      "netmhc": {
+        "total_peptidos_evaluados": 62,
+        "high_binders_SB": 1,
+        "weak_binders_WB": 1,
+        "epitopos_riesgo": [
+          {
+            "peptido": "ALLDPTAGA",
+            "posicion": 7,
+            "rank": 0.166,
+            "nivel": "SB"
+          },
+          {
+            "peptido": "LLGEGTGGV",
+            "posicion": 47,
+            "rank": 0.707,
+            "nivel": "WB"
+          }
+        ]
+      },
+      "riesgo_inmunogenicidad": "MODERADO",
+      "decision": "Sintetizar + monitorear inmunogenicidad en wet lab",
+      "accion_pyrosetta": "Mutar posicion 7-9 ALLDPTAGA para eliminar epitopo SB sin afectar union JAK3"
+    },
+    "PARK_010_3": {
+      "iptm": 0.811,
+      "blanco": "Alpha-sinucleina NAC P37840",
+      "longitud": 35,
+      "tipo_molecula": "peptido",
+      "admet": "PASA",
+      "netmhc": {
+        "total_peptidos_evaluados": 1,
+        "high_binders_SB": 0,
+        "weak_binders_WB": 0,
+        "epitopos_riesgo": []
+      },
+      "riesgo_inmunogenicidad": "LIMPIO",
+      "decision": "Sintesis inmediata — candidato pre-clinico prioritario",
+      "secuencia": "AAAAAAGAAAAAAAAAAAAAAEAAAAAARAASGAL"
+    },
+    "JAK1_NEW_3": {
+      "iptm": 0.744,
+      "blanco": "JAK1 kinasa P23458",
+      "longitud": 60,
+      "tipo_molecula": "proteina",
+      "admet": "PASA",
+      "netmhc": {
+        "total_peptidos_evaluados": 52,
+        "high_binders_SB": 1,
+        "weak_binders_WB": 1,
+        "epitopos_riesgo": [
+          {
+            "peptido": "RLFAPEHLI",
+            "posicion": 3,
+            "rank": 0.166,
+            "nivel": "SB"
+          },
+          {
+            "peptido": "FAPEHLIPL",
+            "posicion": 5,
+            "rank": 0.732,
+            "nivel": "WB"
+          }
+        ]
+      },
+      "riesgo_inmunogenicidad": "MODERADO",
+      "decision": "Sintetizar + monitorear inmunogenicidad en wet lab",
+      "accion_pyrosetta": "Mutar posicion 3-5 RLFAPEHLI para eliminar epitopo SB sin afectar union JAK1"
+    },
+    "MPNN_6": {
+      "iptm": 0.709,
+      "blanco": "Alpha-sinucleina NAC P37840",
+      "longitud": 35,
+      "tipo_molecula": "peptido",
+      "admet": "PASA",
+      "netmhc": {
+        "total_peptidos_evaluados": 27,
+        "high_binders_SB": 0,
+        "weak_binders_WB": 0,
+        "epitopos_riesgo": []
+      },
+      "riesgo_inmunogenicidad": "LIMPIO",
+      "decision": "Sintesis recomendada — segunda opcion Parkinson",
+      "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL"
+    },
+    "TYRP1_OPT_8": {
+      "iptm": 0.626,
+      "blanco": "TYRP1 P17643",
+      "longitud": 60,
+      "tipo_molecula": "proteina",
+      "admet": "PASA",
+      "netmhc": {
+        "total_peptidos_evaluados": 52,
+        "high_binders_SB": 0,
+        "weak_binders_WB": 2,
+        "epitopos_riesgo": [
+          {
+            "peptido": "AVVPPPTPA",
+            "posicion": 12,
+            "rank": 1.169,
+            "nivel": "WB"
+          },
+          {
+            "peptido": "GLPKECATV",
+            "posicion": 25,
+            "rank": 0.59,
+            "nivel": "WB"
+          }
+        ]
+      },
+      "riesgo_inmunogenicidad": "BAJO",
+      "decision": "Sintesis recomendada — tercer flanco vitiligo viable"
+    }
+  },
+  "ranking_riesgo": [
+    {
+      "candidato": "PARK_010_3",
+      "iptm": 0.811,
+      "riesgo": "LIMPIO",
+      "prioridad_sintesis": 1
+    },
+    {
+      "candidato": "MPNN_6",
+      "iptm": 0.709,
+      "riesgo": "LIMPIO",
+      "prioridad_sintesis": 2
+    },
+    {
+      "candidato": "TYRP1_OPT_8",
+      "iptm": 0.626,
+      "riesgo": "BAJO",
+      "prioridad_sintesis": 3
+    },
+    {
+      "candidato": "JAK1_NEW_3",
+      "iptm": 0.744,
+      "riesgo": "MODERADO",
+      "prioridad_sintesis": 4
+    },
+    {
+      "candidato": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "riesgo": "MODERADO",
+      "prioridad_sintesis": 5
+    }
+  ],
+  "nota_clinica": "SB predicho en HLA-A*02:01 no es descarte automatico. Riesgo real depende de distribucion HLA del grupo de pacientes objetivo. Un Strong Binder predicho no siempre genera respuesta clinica.",
+  "proximos_pasos": [
+    "1. Registrar PyRosetta en rosettacommons.org (HACER HOY)",
+    "2. Instalar PyRosetta manana y mutar epitopos JAK3_OPT_2 y JAK1_NEW_3",
+    "3. Re-evaluar variantes mutadas en NetMHCpan DTU",
+    "4. Subir gate35_netmhc_final.json a GitHub outputs/",
+    "5. Continuar con instalacion RFdiffusion y DiffDock sabado con Colab Pro"
+  ]
+}

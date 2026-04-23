@@ -1,0 +1,57 @@
+{
+  "fecha": "2026-04-23",
+  "gate": "3.5 — ADMET + Drug-Likeness",
+  "version_umbrales": "v2 — corregidos (excluye Ala de hidrofobicos, clasifica por tipo)",
+  "resultados": {
+    "PARK_010_3": {
+      "tipo": "peptido",
+      "iptm": 0.811,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "JAK3_OPT_2": {
+      "tipo": "proteina",
+      "iptm": 0.848,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "JAK3_OPT_10": {
+      "tipo": "proteina",
+      "iptm": 0.82,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "JAK1_NEW_3": {
+      "tipo": "proteina",
+      "iptm": 0.744,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "TYRP1_OPT_8": {
+      "tipo": "proteina",
+      "iptm": 0.626,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "MPNN_6": {
+      "tipo": "peptido",
+      "iptm": 0.709,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    },
+    "HLB_CTP_3": {
+      "tipo": "enzima",
+      "iptm": 0.528,
+      "gate35": "PASA",
+      "fallos": 0,
+      "netmhc": "pendiente"
+    }
+  },
+  "nota": "NetMHCpan pendiente verificacion manual en https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/"
+}
