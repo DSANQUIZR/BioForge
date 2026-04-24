@@ -1,0 +1,82 @@
+{
+  "fecha": "2026-04-23",
+  "experimento": "Scoring Boltz-2 variantes de-inmunizadas PyRosetta",
+  "resultados": {
+    "JAK3_OPT_2_mut": {
+      "iptm": 0.76,
+      "confidence": 0.635,
+      "vs_original": {
+        "original_iptm": 0.848,
+        "cambio": "-10%"
+      },
+      "inmunogenicidad": {
+        "SB": 0,
+        "WB": 1
+      },
+      "decision": "VIABLE — usar si se prioriza seguridad sobre afinidad maxima",
+      "secuencia": "AALPLAASLEPTAGAPVPAGAAGLAAAAFANVDPSLFPEEHLEFLELLGEGTGGVVRLARYDPNGDGSGP"
+    },
+    "JAK1_NEW_3_mut": {
+      "iptm": 0.861,
+      "confidence": 0.701,
+      "vs_original": {
+        "original_iptm": 0.744,
+        "cambio": "+16%"
+      },
+      "inmunogenicidad": {
+        "SB": 0,
+        "WB": 1
+      },
+      "decision": "NUEVO RECORD JAK1 — reemplaza al original como candidato principal",
+      "secuencia": "DPRSFAPEHLEPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE"
+    }
+  },
+  "records_actualizados": {
+    "JAK3_record": {
+      "id": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "nota": "Original mantiene record absoluto"
+    },
+    "JAK1_record": {
+      "id": "JAK1_NEW_3_mut",
+      "iptm": 0.861,
+      "nota": "Nuevo record JAK1 — mutado supera original"
+    },
+    "PARK_record": {
+      "id": "PARK_010_3",
+      "iptm": 0.811
+    }
+  },
+  "tabla_vitiligo_actualizada": [
+    {
+      "id": "JAK3_OPT_2",
+      "iptm": 0.848,
+      "inmuno": "MODERADO",
+      "estado": "Record absoluto BioForge"
+    },
+    {
+      "id": "JAK1_NEW_3_mut",
+      "iptm": 0.861,
+      "inmuno": "BAJO",
+      "estado": "Nuevo record JAK1"
+    },
+    {
+      "id": "JAK3_OPT_2_mut",
+      "iptm": 0.76,
+      "inmuno": "BAJO",
+      "estado": "Version segura JAK3"
+    },
+    {
+      "id": "JAK1_NEW_3",
+      "iptm": 0.744,
+      "inmuno": "MODERADO",
+      "estado": "Superado por mutado"
+    },
+    {
+      "id": "TYRP1_OPT_8",
+      "iptm": 0.626,
+      "inmuno": "BAJO",
+      "estado": "Viable"
+    }
+  ]
+}
