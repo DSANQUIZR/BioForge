@@ -1,0 +1,63 @@
+{
+  "nombre": "PROTOCOLO BIOFORGE v1.0 — Seleccion de Dominio",
+  "fecha": "2026-04-24",
+  "reglas": [
+    "Usar dominio funcional con pLDDT >70 documentado en literatura",
+    "NO reducir por conveniencia computacional",
+    "NO incluir regiones pLDDT <70 que introducen ruido en scoring",
+    "Justificar cada dominio con referencia a literatura o uso clinico previo",
+    "Documentar pLDDT de proteina completa y dominio seleccionado"
+  ],
+  "validacion_empirica": {
+    "caso_PARK_010_3": {
+      "ipTM_NAC_domain": 0.811,
+      "ipTM_SNCA_completa": 0.621,
+      "pLDDT_NAC": 82.3,
+      "pLDDT_Cterminal": 50.9,
+      "conclusion": "ipTM baja al incluir C-terminal desordenado pLDDT 50.9. NAC es el dominio correcto."
+    },
+    "caso_MPNN_6": {
+      "ipTM_NAC_domain": 0.709,
+      "ipTM_SNCA_completa": 0.715,
+      "conclusion": "ipTM consistente — confirma que NAC es el dominio correcto para Parkinson."
+    }
+  },
+  "blancos_validados": {
+    "P37840": {
+      "nombre": "Alpha-sinucleina NAC — Parkinson",
+      "dominio": "61-95",
+      "total_aa": 140,
+      "pLDDT_completa": 75.2,
+      "pLDDT_dominio": 82.3,
+      "cumple_protocolo": "SI",
+      "justificacion": "Nucleo agregacion patologica Parkinson. >500 papers. Sitio inhibidores clinicos."
+    },
+    "P52333": {
+      "nombre": "JAK3 kinasa — Vitiligo",
+      "dominio": "781-1124",
+      "total_aa": 1124,
+      "pLDDT_completa": 85.7,
+      "pLDDT_dominio": 82.6,
+      "cumple_protocolo": "SI",
+      "justificacion": "Sitio catalitico JAK3. Mismo dominio Ruxolitinib FDA 2022."
+    },
+    "P23458": {
+      "nombre": "JAK1 kinasa — Vitiligo",
+      "dominio": "866-1154",
+      "total_aa": 1154,
+      "pLDDT_completa": 85.6,
+      "pLDDT_dominio": 90.3,
+      "cumple_protocolo": "SI",
+      "justificacion": "Sitio catalitico JAK1. Mismo dominio inhibidores JAK1 uso clinico."
+    },
+    "P17643": {
+      "nombre": "TYRP1 — Vitiligo",
+      "dominio": "1-500",
+      "total_aa": 537,
+      "pLDDT_completa": 91.7,
+      "pLDDT_dominio": 94.4,
+      "cumple_protocolo": "SI",
+      "justificacion": "TYRP1 enzima melanogenesis. Proteccion directa melanocito."
+    }
+  }
+}

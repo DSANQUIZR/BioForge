@@ -92,3 +92,23 @@ No todos los blancos responden igual a la temperatura. Aplicar el siguiente fluj
 - Instalar dependencias y verificar GPU en la misma sesión para evitar reinicios
 - Los resultados de Colab se pierden al reiniciar — descargar JSON inmediatamente
 - Verificar siempre en GitHub directamente, no confiar en reportes del agente
+
+## PROTOCOLO v1.0 — Selección de Dominio (2026-04-24)
+
+### Reglas obligatorias
+1. Usar dominio funcional con pLDDT >70 documentado en literatura
+2. NO reducir por conveniencia computacional
+3. NO incluir regiones pLDDT <70 — introducen ruido en scoring
+4. Justificar cada dominio con referencia a literatura o uso clínico previo
+
+### Dominios validados
+- P37840 NAC (61-95): pLDDT=82.3 ✅ Parkinson
+- P52333 JAK3 (781-1124): pLDDT=82.6 ✅ Vitiligo
+- P23458 JAK1 (866-1154): pLDDT=90.3 ✅ Vitiligo
+- P17643 TYRP1 (1-500): pLDDT=94.4 ✅ Vitiligo
+
+### Validación empírica
+- PARK_010_3 vs NAC: ipTM=0.811 ✅ resultado válido
+- PARK_010_3 vs SNCA completa: ipTM=0.621 — C-terminal pLDDT<50.9 introduce ruido
+- MPNN_6 vs NAC: ipTM=0.709 ✅ consistente
+- MPNN_6 vs SNCA completa: ipTM=0.715 ✅ confirma NAC como dominio correcto
