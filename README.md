@@ -37,10 +37,21 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 > BioForge utiliza una **Matriz de Optimización**: blancos *convergentes* (JAK3/TYRP1) requieren bajar temperatura, mientras que blancos *diversos* (JAK1/Parkinson) requieren rotación de seed y scoring exhaustivo de todos los candidatos.
 
 
-## 🛠️ Requisitos
-- Python 3.10+
-- Anthropic API Key (configurada en `.env`)
-- Acceso a Google Colab (con T4 GPU habilitada para Fase 2.5)
+## 🛠️ Requisitos e Infraestructura
+- **Python 3.10+**
+- **Anthropic API Key**: Configurada en `.env` para reportes clínicos.
+- **Compute**: Google Colab (GPU T4) / Google Cloud Platform (VM A100 para HLB).
+- **Persistencia GCP**: Sincronización automática con `gs://bioforge-storage`.
+
+### Sincronización con GCP
+Para asegurar la persistencia de los resultados (`outputs/`) entre sesiones de Colab, utilizar el script de sincronización:
+```bash
+# Para subir resultados al final de la sesión:
+python scripts/gcp_sync.py push
+
+# Para recuperar resultados al inicio de una sesión:
+python scripts/gcp_sync.py pull
+```
 
 ## 📌 Protocolo de Trabajo
 Toda afirmación de éxito en este repositorio debe estar respaldada por:
