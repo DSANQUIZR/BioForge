@@ -1,0 +1,62 @@
+{
+  "fecha": "2026-04-23",
+  "herramienta_mutacion": "PyRosetta 2026",
+  "herramienta_validacion": "NetMHCpan 4.1b DTU HLA-A*02:01 9-mer",
+  "candidatos_mutados": {
+    "JAK3_OPT_2_mut": {
+      "secuencia_original": "AALPLAALLDPTAGAPVPAGAAGLAAAAFANVDPSLFPEEHLEFLELLGEGTGGVVRLARYDPNGDGSGP",
+      "secuencia_mutada": "AALPLAASLEPTAGAPVPAGAAGLAAAAFANVDPSLFPEEHLEFLELLGEGTGGVVRLARYDPNGDGSGP",
+      "mutaciones": [
+        {
+          "posicion": 8,
+          "original": "L",
+          "mutado": "S",
+          "razon": "Rompe ancla hidrofobica MHC-I pos2"
+        },
+        {
+          "posicion": 10,
+          "original": "D",
+          "mutado": "E",
+          "razon": "Altera presentacion epitopo"
+        }
+      ],
+      "epitopo_eliminado": "ALLDPTAGA %Rank 0.166 SB",
+      "resultado": {
+        "SB": 0,
+        "WB": 1,
+        "WB_residual": "LLGEGTGGV %Rank 0.707"
+      },
+      "mejora": "SB eliminado — riesgo reducido de MODERADO a BAJO"
+    },
+    "JAK1_NEW_3_mut": {
+      "secuencia_original": "DPRLFAPEHLIPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE",
+      "secuencia_mutada": "DPRSFAPEHLEPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE",
+      "mutaciones": [
+        {
+          "posicion": 4,
+          "original": "L",
+          "mutado": "S",
+          "razon": "Rompe ancla hidrofobica MHC-I pos2"
+        },
+        {
+          "posicion": 11,
+          "original": "I",
+          "mutado": "E",
+          "razon": "Elimina ancla C-terminal MHC-I"
+        }
+      ],
+      "epitopo_eliminado": "RLFAPEHLI %Rank 0.166 SB",
+      "resultado": {
+        "SB": 0,
+        "WB": 1,
+        "WB_residual": "FAPEHLEPL %Rank 1.224"
+      },
+      "mejora": "SB eliminado — riesgo reducido de MODERADO a BAJO"
+    }
+  },
+  "proximos_pasos": [
+    "Scorear JAK3_OPT_2_mut y JAK1_NEW_3_mut con Boltz-2 para verificar que las mutaciones no afectaron la union al blanco",
+    "Si ipTM se mantiene >0.7 — candidatos mutados reemplazan a los originales",
+    "Si ipTM baja significativamente — usar originales y monitorear inmunogenicidad en wet lab"
+  ]
+}

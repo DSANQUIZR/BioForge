@@ -15,19 +15,21 @@ Este proyecto se rige por un **Protocolo de Verificación Estándar**. A continu
 - **Binder Generation (EvoDiff)**: ✅ **REAL**. Diseño inicial completado.
 - **Scoring (Boltz-2 / ESMFold)**: ✅ **REAL**. Validación completada en GPU Tesla T4.
 
-### Fase 3: Optimización Condicionada (Breakthrough)
-- **RFdiffusion + ProteinMPNN**: ✅ **COMPLETADA**.
-- **Hito Parkinson**: 🏆 **PARK_010_3 logrando ipTM 0.811**. Candidato de alta confianza (>0.8).
-- **Hito Vitiligo**: 🏆 **JAK3_OPT_2 logrando ipTM 0.848**. Candidato de alta confianza (>0.8).
+### Fase 4: De-inmunización y Validación Estructural
+- **PyRosetta Design**: ✅ **COMPLETADA**. Refinamiento de candidatos mediante mutaciones estratégicas en anclas MHC-I.
+- **De-inmunización (NetMHCpan)**: ✅ **VERIFICADA**. Reducción de riesgo inmunogénico de MODERADO a BAJO para candidatos top de Vitiligo.
 
 #### Estado Actual de BioForge:
-| Enfermedad | Mejor Candidato | ipTM | Estado / Estrategia |
+| Enfermedad | Mejor Candidato | ipTM | Inmunogenicidad (Puntos Calientes MHC-I) |
 |---|---|---|---|
-| **Vitiligo** | **JAK3_OPT_2** | **0.848** | 🏆 Récord (Péptido Individual) |
-| **Parkinson** | **PARK_010_3** | **0.811** | 🏆 Récord (Péptido Individual) |
-| Vitiligo (JAK1) | JAK1_NEW_3 | 0.744 | ✅ Viable (Seed 99) |
-| Vitiligo (TYRP1) | TYRP1_OPT_8 | 0.626 | ✅ Viable (Temp 0.05) |
-| **HLB (Greening)**| **Sample 6**  | *TBD* | 🧪 ProteinMPNN Listo (Scoring pend.) |
+| **Vitiligo (JAK3)** | **JAK3_OPT_2_mut** | **0.848*** | 🟢 BAJA (SB Eliminado) |
+| **Parkinson** | **PARK_010_3** | **0.811** | 🟡 PENDIENTE |
+| Vitiligo (JAK1) | JAK1_NEW_3_mut | 0.744* | 🟢 BAJA (SB Eliminado) |
+
+*\*ipTM estimado tras mutación; pendiente re-scoring en Boltz-2.*
+
+> [!IMPORTANT]
+> **Hito PyRosetta**: Se implementó una nueva vía de instalación vía `pyrosetta-installer` (Conda compat) que permite el uso de PyRosetta sin licenciamiento comercial restrictivo en entornos de investigación académica.
 
 > [!IMPORTANT]
 > **Lección Vitiligo**: El diseño de una molécula trispecífica fusionada fue descartado tras obtener un **ipTM máximo de 0.380**. La estrategia final validada es la **terapia combinada de 3 péptidos independientes** atacando JAK3, JAK1 y TYRP1 simultáneamente.
