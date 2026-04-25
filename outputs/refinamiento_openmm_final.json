@@ -1,0 +1,21 @@
+{
+  "fecha": "2026-04-25",
+  "herramienta": "OpenMM 8.5.1 + ESMFold API",
+  "candidatos_refinados": {
+    "MPNN_6": {
+      "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
+      "energia_antes_kJmol": 4142.8,
+      "energia_despues_kJmol": -510.2,
+      "estructura_refinada": "MPNN6_refinado.pdb",
+      "estado": "ESTABLE"
+    },
+    "JAK1_NEW_3_mut": {
+      "secuencia": "DPRSFAPEHLEPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE",
+      "energia_antes_kJmol": 14842.7,
+      "energia_despues_kJmol": -9809.5,
+      "estructura_refinada": "JAK1mut_refinado.pdb",
+      "estado": "ESTABLE"
+    }
+  },
+  "nota": "Estructuras individuales refinadas. Siguiente paso: DiffDock para pose de union 3D complejo blanco-candidato"
+}
