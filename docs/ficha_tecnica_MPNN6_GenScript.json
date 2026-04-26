@@ -1,0 +1,84 @@
+{
+  "titulo": "Ficha Técnica de Síntesis — MPNN_6",
+  "proyecto": "BioForge — Candidato Terapéutico Parkinson",
+  "fecha": "2026-04-26",
+  "investigador": "Dickson Urbano Sanquiz",
+  "referencia_interna": "BF-PARK-001",
+  "peptido": {
+    "nombre": "MPNN_6",
+    "secuencia": "ELAAALGAAAAAAAAAAAAAAAAAAAAAAAAAGIL",
+    "longitud": 35,
+    "peso_molecular_estimado_Da": 2704,
+    "formula_molecular": "C119H193N33O37",
+    "extremo_N": "H2N- (libre)",
+    "extremo_C": "-COOH (libre)",
+    "modificaciones": "Ninguna",
+    "pureza_requerida": ">95% HPLC",
+    "cantidad_requerida": "5 mg",
+    "formato_entrega": "Liofilizado"
+  },
+  "justificacion_cientifica": {
+    "blanco_terapeutico": "Alpha-sinucleína P37840 — dominio NAC residuos 61-95",
+    "mecanismo_accion": "Inhibición competitiva de agregación amiloide por intercalación helicoidal con dominio NAC",
+    "enfermedad": "Enfermedad de Parkinson",
+    "ipTM_vs_SNCA_completa": 0.715,
+    "ipTM_vs_NAC_dominio": 0.709,
+    "nota_consistencia": "ipTM consistente contra SNCA completa y dominio NAC — candidato más robusto del batch",
+    "pLDDT_blanco": 82.3,
+    "docking_PatchDock": {
+      "session_id": "d9aff0c15db94dde8423ddb7357ad740",
+      "score_top": 6154,
+      "ACE_mejor": -600.5,
+      "pose_recomendada": "rank_2",
+      "descripcion": "Hélices alfa paralelas — intercalación directa con dominio NAC"
+    }
+  },
+  "perfil_admet": {
+    "peso_molecular_Da": 2704,
+    "logP": -14.25,
+    "HBD": 37,
+    "HBA": 37,
+    "AMES_mutagenico": 0.024,
+    "PAINS_alertas": 0,
+    "BRENK_alertas": 0,
+    "NIH_alertas": 0,
+    "BBB_penetracion": 0.019,
+    "bioavailabilidad_oral": 0.041,
+    "interpretacion": "Perfil toxicológico limpio. BBB bajo requiere formulación especializada para SNC.",
+    "nota_lipinski": "Violaciones Lipinski esperadas para péptido terapéutico — no es criterio de descarte"
+  },
+  "perfil_inmunologico": {
+    "herramienta": "NetMHCpan 4.1b — HLA-A*02:01 9-mer",
+    "strong_binders_SB": 0,
+    "weak_binders_WB": 0,
+    "interpretacion": "Perfil inmunológico completamente limpio — riesgo de respuesta citotóxica mínimo",
+    "de_inmunizacion_requerida": false
+  },
+  "refinamiento_estructural": {
+    "herramienta": "OpenMM 8.5.1 + ESMFold",
+    "energia_antes_kJmol": 4142.8,
+    "energia_despues_kJmol": -510.2,
+    "estado": "ESTABLE"
+  },
+  "especificaciones_genscript": {
+    "servicio": "Custom Peptide Synthesis",
+    "url": "https://www.genscript.com/peptide-synthesis.html",
+    "pureza": ">95% by HPLC",
+    "analisis_requeridos": [
+      "HPLC analysis report",
+      "Mass spectrometry (MS) confirmation",
+      "Certificate of Analysis (CoA)"
+    ],
+    "disolvente_recomendado": "DMSO 10% luego PBS pH 7.4",
+    "almacenamiento": "-20°C protegido de luz, liofilizado",
+    "tiempo_entrega_estimado": "2-3 semanas",
+    "costo_estimado_USD": "300-500"
+  },
+  "proximos_pasos_wet_lab": [
+    "N4.1 SPR o ITC: afinidad de unión vs Alpha-sinucleína recombinante",
+    "N4.2 ThT assay: inhibición de agregación in vitro",
+    "N5.1 MTT: citotoxicidad en neuronas dopaminérgicas SH-SY5Y",
+    "N5.2 Modelos celulares Parkinson inducido por MPTP",
+    "N6: Formulación con nanopartículas lipídicas para cruce BBB"
+  ]
+}

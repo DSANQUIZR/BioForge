@@ -1,0 +1,110 @@
+{
+  "titulo": "Ficha Técnica de Síntesis — JAK1_NEW_3_mut",
+  "proyecto": "BioForge — Candidato Terapéutico Vitiligo",
+  "fecha": "2026-04-26",
+  "investigador": "Dickson Urbano Sanquiz",
+  "referencia_interna": "BF-VIT-001",
+  "peptido": {
+    "nombre": "JAK1_NEW_3_mut",
+    "secuencia": "DPRSFAPEHLEPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE",
+    "longitud": 60,
+    "peso_molecular_estimado_Da": 6660,
+    "extremo_N": "H2N- (libre)",
+    "extremo_C": "-COOH (libre)",
+    "modificaciones": "Mutaciones de-inmunización: L4S + I11E (vs secuencia original JAK1_NEW_3)",
+    "secuencia_original": "DPRLFAPEHLIPLRRLGTGGLGEVLLCRYDPNGDGTGRLVALKRLRPDAGPEALERLRRE",
+    "mutaciones_detalle": [
+      {
+        "posicion": 4,
+        "original": "L",
+        "mutado": "S",
+        "razon": "Elimina ancla hidrofóbica MHC-I pos2 del epitopo RLFAPEHLI"
+      },
+      {
+        "posicion": 11,
+        "original": "I",
+        "mutado": "E",
+        "razon": "Elimina ancla C-terminal MHC-I del epitopo RLFAPEHLI"
+      }
+    ],
+    "pureza_requerida": ">95% HPLC",
+    "cantidad_requerida": "5 mg",
+    "formato_entrega": "Liofilizado"
+  },
+  "justificacion_cientifica": {
+    "blanco_terapeutico": "JAK1 kinasa P23458 — dominio kinasa residuos 866-1154",
+    "mecanismo_accion": "Inhibición competitiva de JAK1 kinasa — bloqueo de señalización JAK-STAT en melanocitos",
+    "enfermedad": "Vitiligo",
+    "ipTM_mutado": 0.861,
+    "ipTM_original": 0.744,
+    "mejora_mutacion": "+16% — mutación mejoró afinidad y eliminó inmunogenicidad simultáneamente",
+    "comparacion_clinica": "Mismo dominio kinasa que Upadacitinib (inhibidor JAK1 aprobado FDA)",
+    "pLDDT_blanco": 90.3,
+    "docking_PatchDock": {
+      "session_id": "2b61954472e04f35b5a4b002484f3d10",
+      "score_top": 12388,
+      "area_contacto_A2": 1637.0,
+      "pose_recomendada": "rank_15",
+      "ACE_pose15": 50.87,
+      "descripcion": "Inserción en bolsillo catalítico JAK1 — inhibición competitiva de fosforilación"
+    }
+  },
+  "perfil_admet": {
+    "peso_molecular_Da": 6660,
+    "logP": -29.45,
+    "HBD": 103,
+    "HBA": 89,
+    "AMES_mutagenico": 0.422,
+    "PAINS_alertas": 0,
+    "BRENK_alertas": 4,
+    "NIH_alertas": 2,
+    "BBB_penetracion": 0.0,
+    "bioavailabilidad_oral": 0.0,
+    "interpretacion": "AMES moderado y alertas BRENK/NIH requieren evaluación in vitro. Administración tópica o intradérmica recomendada para Vitiligo — no requiere cruce BBB.",
+    "nota_lipinski": "Violaciones Lipinski esperadas para péptido terapéutico de 60 aa — no es criterio de descarte"
+  },
+  "perfil_inmunologico": {
+    "herramienta": "NetMHCpan 4.1b — HLA-A*02:01 9-mer",
+    "secuencia_original": {
+      "strong_binders_SB": 1,
+      "weak_binders_WB": 1,
+      "epitopo_sb": "RLFAPEHLI pos3 %Rank=0.166"
+    },
+    "secuencia_mutada": {
+      "strong_binders_SB": 0,
+      "weak_binders_WB": 1,
+      "WB_residual": "FAPEHLEPL %Rank=1.224 — bajo riesgo"
+    },
+    "de_inmunizacion": "Completada con PyRosetta — SB eliminado",
+    "interpretacion": "0 Strong Binders post-mutación — riesgo inmunogénico reducido a BAJO"
+  },
+  "refinamiento_estructural": {
+    "herramienta": "OpenMM 8.5.1 + ESMFold",
+    "energia_antes_kJmol": 14842.7,
+    "energia_despues_kJmol": -9809.5,
+    "estado": "ESTABLE"
+  },
+  "especificaciones_genscript": {
+    "servicio": "Custom Peptide Synthesis",
+    "url": "https://www.genscript.com/peptide-synthesis.html",
+    "pureza": ">95% by HPLC",
+    "analisis_requeridos": [
+      "HPLC analysis report",
+      "Mass spectrometry (MS) confirmation",
+      "Certificate of Analysis (CoA)"
+    ],
+    "disolvente_recomendado": "DMSO 10% luego PBS pH 7.4",
+    "almacenamiento": "-20°C protegido de luz, liofilizado",
+    "tiempo_entrega_estimado": "2-3 semanas",
+    "costo_estimado_USD": "600-900",
+    "nota_sintesis": "Péptido de 60 aa — verificar disponibilidad de síntesis extendida con GenScript"
+  },
+  "proximos_pasos_wet_lab": [
+    "N4.1 SPR o ITC: afinidad de unión vs JAK1 recombinante",
+    "N4.2 Kinase assay: inhibición de actividad kinasa JAK1 — IC50",
+    "N4.3 AMES test in vitro: confirmar/descartar mutagenicidad predicha",
+    "N5.1 MTT: citotoxicidad en melanocitos primarios",
+    "N5.2 Modelo celular Vitiligo — inhibición JAK-STAT en melanocitos",
+    "N6: Formulación tópica — crema o gel intradérmico"
+  ]
+}
