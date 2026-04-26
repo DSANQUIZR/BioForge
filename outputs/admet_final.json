@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-04-25",
+  "herramienta": "ADMET-AI v2.0.1",
+  "nota_lipinski": "Lipinski=1 indica falla de reglas para moleculas pequenas — ESPERADO para peptidos terapeuticos. No es criterio de descarte.",
+  "candidatos": {
+    "MPNN_6": {
+      "molecular_weight": 2704.09,
+      "logP": -14.25,
+      "HBD": 37,
+      "HBA": 37,
+      "QED": 0.027,
+      "BBB": 0.019,
+      "bioavailabilidad_oral": 0.041,
+      "AMES_mutagenico": 0.024,
+      "PAINS": 0,
+      "BRENK": 0,
+      "NIH": 0,
+      "interpretacion": "Perfil ADMET excelente para peptido. Sin alertas toxicologicas. BBB bajo requiere sistema de entrega para Parkinson.",
+      "alerta_critica": "BBB=0.019 — requiere formulacion especial (nanoparticulas, intranasal, TAT conjugado)",
+      "decision": "VIABLE — continuar con formulacion farmaceutica especializada"
+    },
+    "JAK1_NEW_3_mut": {
+      "molecular_weight": 6663.62,
+      "logP": -29.45,
+      "HBD": 103,
+      "HBA": 89,
+      "QED": 0.011,
+      "BBB": 0.0,
+      "bioavailabilidad_oral": 0.0,
+      "AMES_mutagenico": 0.422,
+      "PAINS": 0,
+      "BRENK": 4,
+      "NIH": 2,
+      "interpretacion": "Perfil ADMET aceptable para peptido terapeutico. AMES moderado y alertas BRENK/NIH requieren evaluacion wet lab.",
+      "alerta_critica": "AMES=0.422 riesgo moderado. BRENK=4 alertas. Evaluar toxicidad en wet lab.",
+      "decision": "VIABLE CON MONITOREO — evaluar mutagenicidad in vitro en wet lab"
+    }
+  },
+  "contexto_peptidos": "Los peptidos terapeuticos aprobados (insulina, GLP-1, semaglutida) tienen perfiles similares. La via de administracion y formulacion son determinantes — no la bioavailabilidad oral.",
+  "siguiente_paso": "Disenar sistema de entrega para MPNN_6 (BBB) y evaluar mutagenicidad JAK1_NEW_3_mut in vitro"
+}
