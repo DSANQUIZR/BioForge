@@ -1,0 +1,69 @@
+{
+  "fecha": "2026-04-26",
+  "herramienta": "PatchDock — Shape Complementarity Docking",
+  "parkinson_MPNN6": {
+    "session_id": "d9aff0c15db94dde8423ddb7357ad740",
+    "receptor": "NAC Alpha-sinucleina 61-95",
+    "ligando": "MPNN6 35aa",
+    "top_poses": [
+      {
+        "rank": 1,
+        "score": 6154,
+        "area": 766.9,
+        "ACE": -403.14
+      },
+      {
+        "rank": 2,
+        "score": 6114,
+        "area": 842.4,
+        "ACE": -477.3
+      },
+      {
+        "rank": 13,
+        "score": 4518,
+        "area": 899.4,
+        "ACE": -600.5
+      }
+    ],
+    "pose_recomendada": "rank_2",
+    "interpretacion": "ACE negativos confirman interacciones electrostaticas favorables. Score 6154 y area 767 Å² son buenos para peptido 35aa."
+  },
+  "vitiligo_JAK1mut": {
+    "session_id": "2b61954472e04f35b5a4b002484f3d10",
+    "receptor": "JAK1 kinasa 866-1154",
+    "ligando": "JAK1_NEW_3_mut 60aa",
+    "top_poses": [
+      {
+        "rank": 1,
+        "score": 12388,
+        "area": 1637.0,
+        "ACE": 133.77
+      },
+      {
+        "rank": 2,
+        "score": 11980,
+        "area": 1898.2,
+        "ACE": 361.11
+      },
+      {
+        "rank": 7,
+        "score": 11284,
+        "area": 1483.5,
+        "ACE": 466.59
+      },
+      {
+        "rank": 15,
+        "score": 10808,
+        "area": 1698.0,
+        "ACE": 50.87
+      }
+    ],
+    "pose_recomendada": "rank_15",
+    "interpretacion": "Score 12388 es el doble de MPNN6 — excelente complementariedad geometrica. ACE positivos indican peptido mas grande con contactos mixtos. Pose #15 ACE=50.87 es la energeticamente mas equilibrada."
+  },
+  "comparacion": {
+    "MPNN6_score": 6154,
+    "JAK1mut_score": 12388,
+    "nota": "Scores no comparables directamente — proteinas blanco de tamaño muy diferente (35aa NAC vs 289aa JAK1 kinasa). Ambos resultados son positivos para sus respectivos contextos."
+  }
+}
