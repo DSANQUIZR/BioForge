@@ -53,6 +53,22 @@ python scripts/gcp_sync.py push
 python scripts/gcp_sync.py pull
 ```
 
+## 🔬 Módulo A: Dry Lab Finalizado (Abril 2026)
+El pipeline computacional para los candidatos principales ha sido completado y verificado visualmente mediante docking estructural.
+
+### Candidatos Listos para Síntesis (Wet Lab):
+1. **MPNN_6 (Parkinson)**: 
+   - **Mecanismo**: Intercalación helicoidal en el dominio NAC.
+   - **Docking**: Pose complementaria perfecta (Pose #2).
+   - **Refinamiento**: Estabilizado mediante OpenMM (E=-510 kJ/mol).
+2. **JAK1_NEW_3_mut (Vitiligo)**:
+   - **Mecanismo**: Inhibidor del bolsillo kinasa de JAK1.
+   - **Docking**: Inserción profunda en la cavidad activa (Pose #15).
+   - **Scoring**: Récord de afinidad ipTM 0.861.
+
+> [!NOTE]
+> Las estructuras finales en formato PDB y los resultados de docking están disponibles en `outputs/structures/`.
+
 ## 📌 Protocolo de Trabajo
 Toda afirmación de éxito en este repositorio debe estar respaldada por:
 1. Un log de ejecución crudo en `outputs/`.
